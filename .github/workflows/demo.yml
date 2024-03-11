@@ -34,19 +34,19 @@ jobs:
         uses: jbzoo/csv-blueprint@master
         with:
           csv: files/demo.csv
-          schema: tests/schemas/demo_valid.yml
+          schema: files/demo_valid.yml
 
       - name: 👎 Invalid CSV file - Report as GitHub Annotations
         uses: jbzoo/csv-blueprint@master
         with:
           csv: files/demo.csv
-          schema: tests/schemas/demo_invalid.yml
+          schema: files/demo_invalid.yml
         continue-on-error: true
 
       - name: 👎 Invalid CSV file - Report as Table
         uses: jbzoo/csv-blueprint@master
         with:
           csv: files/demo.csv
-          schema: tests/schemas/demo_invalid.yml
+          schema: files/demo_invalid.yml
           output: table
         continue-on-error: true
