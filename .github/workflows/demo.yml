@@ -42,3 +42,13 @@ jobs:
         # Continue to next steps even if the action fails
         # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
         continue-on-error: true
+
+      - name: 👎 Invalid CSV file - Report as Text
+        uses: jbzoo/csv-blueprint@master
+        with:
+          csv: files/demo.csv
+          schema: files/demo_invalid.yml
+          output: text                                  # Report customisation
+        # Continue to next steps even if the action fails
+        # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
+        continue-on-error: true
