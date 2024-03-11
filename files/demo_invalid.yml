@@ -1,3 +1,5 @@
+# This schema is invalid because does not match the CSV file (demo.csv).
+
 columns:
   - name: Name
     rules:
