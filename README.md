@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/JBZoo/Csv-Blueprint-Demo/actions/workflows/demo.yml/badge.svg?branch=master)](https://github.com/JBZoo/Csv-Blueprint-Demo/actions/workflows/demo.yml?query=branch%3Amaster)
 
-It's just a simple example of how to use the [Csv-Blueprint](https://github.com/JBZoo/Csv-Blueprint);
+It's just a simple example of how to use the [Csv-Blueprint](https://github.com/JBZoo/Csv-Blueprint).
 
 ### See GitHub Actions for more details
 
