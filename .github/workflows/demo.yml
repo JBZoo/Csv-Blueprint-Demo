@@ -20,7 +20,6 @@ jobs:
         with:
           csv: files/*.csv
           schema: files/*.yml
-          output: table                                 # Report customisation
         # Continue to next steps even if the action fails
         # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
         continue-on-error: true
@@ -31,6 +30,7 @@ jobs:
         with:
           csv: files/*.csv
           schema: files/*.yml
+          report: github                                 # Report customisation
         # Continue to next steps even if the action fails
         # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
         continue-on-error: true
