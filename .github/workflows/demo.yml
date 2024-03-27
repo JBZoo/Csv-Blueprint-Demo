@@ -13,14 +13,17 @@ jobs:
     name: Demo
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      # Minimal example
-      - name: 👍 Valid CSV file
+      - name: 👎 Invalid CSV file - Report as Table
         uses: jbzoo/csv-blueprint@master
         with:
           csv: files/demo.csv
-          schema: files/demo_valid.yml
+          schema: files/demo_invalid.yml
+          output: table                                 # Report customisation
+        # Continue to next steps even if the action fails
+        # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
+        continue-on-error: true
 
 
       - name: 👎 Invalid CSV file - Report as GitHub Annotations
@@ -33,12 +36,9 @@ jobs:
         continue-on-error: true
 
 
-      - name: 👎 Invalid CSV file - Report as Table
+      # Minimal valid example
+      - name: 👍 Valid CSV file
         uses: jbzoo/csv-blueprint@master
         with:
           csv: files/demo.csv
-          schema: files/demo_invalid.yml
-          output: table                                 # Report customisation
-        # Continue to next steps even if the action fails
-        # It's just a demo. In real life, you should fix the schema and remove `continue-on-error`
-        continue-on-error: true
+          schema: files/demo_valid.yml
