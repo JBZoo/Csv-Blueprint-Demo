@@ -1,5 +1,7 @@
 # This schema is valid because match the CSV file (demo.csv) perfectly.
 
+filename_pattern: /^demo\.csv$/
+
 columns:
   - name: Name
     rules:
