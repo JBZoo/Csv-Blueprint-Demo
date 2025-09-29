@@ -7,7 +7,7 @@ It's just a simple example of how to use the [JBZoo/Csv-Blueprint](https://githu
 
 ### See GitHub Actions for more details
 
-* [Reporting in PR](https://github.com/JBZoo/Csv-Blueprint-Demo/pull/1/files)
+* [Reporting in PR](https://github.com/JBZoo/Csv-Blueprint-Demo/pull/2/files)
 * [Live demo](https://github.com/JBZoo/Csv-Blueprint-Demo/actions/workflows/demo.yml?query=branch%3Amaster)
   * Open the latest build.
   * See Annotations at the bottom of the page.
