@@ -1,5 +1,7 @@
 # This schema is invalid because does not match the CSV file (demo.csv).
 
+filename_pattern: /demo\.csv$/
+
 columns:
   - name: Name
     rules:
